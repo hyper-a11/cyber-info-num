@@ -8,10 +8,10 @@ const OWNER_NAME = "ZEXX_OWNER";
 
 // 🔑 Multiple Keys Database
 const KEYS_DB = {
-  "AKASH_VIP": { expiry: "2026-12-31", status: "Premium" },
-  "OWNER_TEST": { expiry: "2026-06-30", status: "Trial" },
-  "ZEXX_TRY": { expiry: "2026-08-15", status: "Basic" },
-  "ZEXX_9PAI4": { expiry: "2026-10-01", status: "Premium" }
+  "ZEXX@_4M": { expiry: "2027-12-31", status: "Premium" },
+  "OWNER_TEST": { expiry: "2032-12-30", status: "Trial" },
+  "ZEXX_1M": { expiry: "2026-08-15", status: "Basic" },
+  "ZEXX_T4L": { expiry: "2026-03-21", status: "Premium" }
 };
 
 // Middleware for parsing JSON requests
