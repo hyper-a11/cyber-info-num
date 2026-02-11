@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "handler.py",
-      "use": "@vercel/python"
+      "src": "index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/handler.py"
+      "dest": "/index.js"
     }
   ]
 }
