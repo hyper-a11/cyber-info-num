@@ -5,24 +5,24 @@ from datetime import datetime
 app = Flask(__name__)
 
 PORT = 3000
-OWNER_NAME = "ZEXX_CYBER"
+OWNER_NAME = "ZEXX_OWNER"
 
 # 🔑 Multiple Keys Database
 KEYS_DB = {
-    "ZEXX_TRY": {
-        "expiry": "2026-12-31",
+    "Z3XX_4ID": {
+        "expiry": "2027-12-31",
         "status": "Premium"
     },
     "OWNER_TEST": {
-        "expiry": "2030-12-30",
+        "expiry": "2032-12-30",
         "status": "Owner"
     },
-    "ZEXX@_9MNTH": {
+    "ZEXX_TRY": {
         "expiry": "2026-04-15",
         "status": "Basic"
     },
-    "Z3XX_1DAY": {
-        "expiry": "2026-10-01",
+    "ZEXX@_9TRY": {
+        "expiry": "2026-05-01",
         "status": "Premium"
     }
 }
@@ -93,7 +93,6 @@ def search():
             "owner": OWNER_NAME
         }), 500
 
-
 @app.route("/")
 def home():
     return jsonify({
@@ -101,6 +100,6 @@ def home():
         "owner": OWNER_NAME
     })
 
-
+# Serverless entry-point for Vercel
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=PORT)
