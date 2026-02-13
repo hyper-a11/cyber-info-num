@@ -85,3 +85,6 @@ app.get('/', (req, res) => {
     owner: OWNER_NAME
   });
 });
+
+// Serverless entry-point for Vercel
+module.exports = app;
